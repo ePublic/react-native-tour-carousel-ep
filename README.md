@@ -1,6 +1,6 @@
 # react-native-tour-carousel
 
-1
+TODO
 
 ## Installation
 
@@ -8,14 +8,14 @@
 npm install react-native-tour-carousel
 ```
 
+```sh
+yarn add react-native-tour-carousel
+```
+
 ## Usage
-
+TODO
 ```js
-import { multiply } from 'react-native-tour-carousel';
 
-// ...
-
-const result = await multiply(3, 7);
 ```
 
 ## Contributing

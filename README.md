@@ -1,31 +1,44 @@
 # react-native-tour-carousel
+> Tour Carousel for use in react native app tours
+## Why
+The Tour Carousel Component is a versatile component layer that combines the functionality of two popular React Native carousel libraries, react-native-reanimated-carousel and react-native-animated-dots-carousel. This component provides a cohesive and customizable way for users to navigate through a series of screens or slides.
+Features
+- Smooth Animation: Utilizes the power of react-native-reanimated for smooth and performant animations.
+- Animated Dots Indicator: Includes a built-in dots indicator powered by react-native-animated-dots-carousel for easy navigation feedback.
+- Customizable: Easily customize the carousel behavior, animation settings, and dot styles to match your app's design.
+- Callback Functions: Supports callback functions for handling actions when the user completes or skips the carousel.
 
-TODO
+## Preview
+<img src="https://github.com/CPKVG/react-native-tour-carousel/assets/51846930/641458d8-77f6-4bdb-a24b-3ba52f2c0cba" width="360">
 
 ## Installation
-
-```sh
-npm install react-native-tour-carousel
-```
-
 ```sh
 yarn add react-native-tour-carousel
 ```
+package dependancies
+```sh
+yarn add react-native-reanimated react-native-gesture-handler react-native-reanimated-carousel react-native-animated-dots-carousel
+```
+#### Npm links
+ - [react-native-reanimated-carousel](https://www.npmjs.com/package/react-native-reanimated-carousel)
+ - [react-native-gesture-handler](https://www.npmjs.com/package/react-native-gesture-handler)
+ - [react-native-reanimated-carousel](https://www.npmjs.com/package/react-native-reanimated-carousel)
+ - [react-native-animated-dots-carousel](https://www.npmjs.com/package/react-native-animated-dots-carousel)
 
-## Usage
-TODO
+## Quick usage guide
 ```js
+    const data = [{
+        "illustration": "https://images.unsplash.com/photo-1601379329542-31c59347e2b8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan sit amet nulla facilisi morbi tempus iaculis urna id.",
+        "title": "Lorem ipsum dolor sit amet"
+    }]
 
+    <TourCarousel data={data}/>
 ```
 
 ## Contributing
-
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
 ## License
-
 MIT
-
 ---
-
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)

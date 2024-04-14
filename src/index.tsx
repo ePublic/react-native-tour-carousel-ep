@@ -18,10 +18,10 @@ import CarouselSlides from './components/Slides';
 import { widthPercentage } from './utils/layout';
 
 type TourCarouselType = {
-  viewedCount: number;
-  handleBottomButtonPress: (arg0: boolean) => void;
-  handleSkipButtonPress: () => void;
   data: any[];
+  viewedCount?: number;
+  handleBottomButtonPress?: (arg0: boolean) => void;
+  handleSkipButtonPress?: () => void;
   skipButtonConfig?: {
     skipButtonStyle?: StyleProp<ViewStyle>;
     skipButtonContainer?: StyleProp<ViewStyle>;
@@ -205,7 +205,7 @@ const TourCarousel = ({
         <TouchableOpacity
           testID={buttonTestID || 'ConsultBottomButton'}
           onPress={(): void[] => [
-            handleBottomButtonPress(lastSlide),
+            handleBottomButtonPress && handleBottomButtonPress(lastSlide),
             carouselRef?.current?.next(),
           ]}
         >

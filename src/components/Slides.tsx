@@ -7,21 +7,11 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+
+import type { SlideProps } from '../types/types';
 import { viewportHeight } from '../utils/layout';
 
 const IS_IOS = Platform.OS === 'ios';
-
-type SlideType = {
-  title: string;
-  subtitle: string;
-  illustration: string;
-};
-
-type SlideProps = {
-  data: SlideType;
-  itemHorizontalMargin: number;
-  slideConfig: any;
-};
 
 const Slides = ({
   data,
@@ -36,8 +26,8 @@ const Slides = ({
     slideInnerContainer,
     slideImageContainer,
     slideTextContainer,
-    slideTitle,
-    slideSubtitle,
+    slideTitleStyle,
+    slideSubtitleStyle,
     maxNumberOfLines,
   } = slideConfig || {};
 
@@ -61,13 +51,13 @@ const Slides = ({
           { height: contentHeight },
         ]}
       >
-        <Text style={slideTitle || styles.title} numberOfLines={2}>
+        <Text style={slideTitleStyle || styles.title} numberOfLines={2}>
           {title}
         </Text>
 
         {/* Subtitle */}
         <Text
-          style={slideSubtitle || styles.subtitle}
+          style={slideSubtitleStyle || styles.subtitle}
           numberOfLines={maxNumberOfLines}
         >
           {subtitle}

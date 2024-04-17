@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import AnimatedDotsCarousel from 'react-native-animated-dots-carousel';
-import type { PaginationType } from '../types';
+import type { PaginationType } from '../types/types';
 
 const Pagination = ({
   currentIndex,
@@ -15,9 +15,9 @@ const Pagination = ({
   return (
     <View style={containerStyle || styles.containerStyle}>
       <AnimatedDotsCarousel
-        length={length}
-        currentIndex={currentIndex}
-        maxIndicators={maxIndicators}
+        length={length || 0}
+        currentIndex={currentIndex || 0}
+        maxIndicators={maxIndicators || 0}
         interpolateOpacityAndColor={true}
         activeIndicatorConfig={
           activeIndicatorConfig || {

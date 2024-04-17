@@ -9,7 +9,9 @@ Features
 - Callback Functions: Supports callback functions for handling actions when the user completes or skips the carousel.
 
 ## Preview
-<img src="https://github.com/CPKVG/react-native-tour-carousel/assets/51846930/641458d8-77f6-4bdb-a24b-3ba52f2c0cba" width="360">
+<p align="left">
+  <img src="https://github.com/CPKVG/react-native-tour-carousel/assets/51846930/641458d8-77f6-4bdb-a24b-3ba52f2c0cba" width="360">
+</p>
 
 ## Installation
 ```sh

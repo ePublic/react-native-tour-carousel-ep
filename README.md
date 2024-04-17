@@ -36,6 +36,114 @@ yarn add react-native-reanimated react-native-gesture-handler react-native-reani
     <TourCarousel data={data}/>
 ```
 
+## Prop Types
+
+### TourCarouselType
+| Property                   | Type                                      |
+|----------------------------|-------------------------------------------|
+| data                       | slide[]                                   |
+| viewedCount                | number                                    |
+| handleBottomButtonPress   | (arg0: boolean) => void                  |
+| handleSkipButtonPress     | () => void                                |
+| skipButtonConfig           | SkipButtonConfig                          |
+| carouselConfig             | CarouselConfig                            |
+| PaginationConfig           | PaginationConfig                          |
+| buttonConfig               | ButtonConfig                              |
+
+### slide
+
+| Property   | Type    |
+|------------|---------|
+| illustration | string |
+| subtitle   | string  |
+| title      | string  |
+
+### SlideConfig
+
+| Property               | Type                      |
+|------------------------|---------------------------|
+| slideInnerContainer    | StyleProp<ViewStyle>      |
+| slideImageContainer    | StyleProp<ViewStyle>      |
+| slideTextContainer     | StyleProp<ViewStyle>      |
+| slideTitle             | string                    |
+| slideSubtitle          | string                    |
+| maxNumberOfLines       | number                    |
+
+### SkipButtonConfig
+
+| Property          | Type                      |
+|-------------------|---------------------------|
+| skipButtonStyle   | StyleProp<ViewStyle>      |
+| skipButtonContainer | StyleProp<ViewStyle>    |
+| titleStyle        | string                    |
+| title             | string                    |
+| disabled          | boolean                   |
+| skipButtonTestID  | string                    |
+| maxSkipCount      | number                    |
+| skipable          | boolean                   |
+
+### ButtonConfig
+
+| Property               | Type                      |
+|------------------------|---------------------------|
+| buttonTestID           | string                    |
+| nextButtonText         | string                    |
+| finishButtonText       | string                    |
+| bottomButtonContainer  | StyleProp<ViewStyle>      |
+| bottomButtonTextStyle  | StyleProp<ViewStyle>      |
+
+### CarouselConfig
+
+| Property              | Type                      |
+|-----------------------|---------------------------|
+| container             | StyleProp<ViewStyle>      |
+| style                 | StyleProp<ViewStyle>      |
+| loop                  | boolean                   |
+| pagingEnabled         | boolean                   |
+| snapEnabled           | boolean                   |
+| autoPlayInterval      | number                    |
+| scrollAnimationDuration | number                  |
+| autoPlay              | boolean                   |
+| vertical              | boolean                   |
+| height                | number                    |
+| slideConfig           | SlideConfig               |
+
+### PaginationConfig
+
+| Property               | Type                      |
+|------------------------|---------------------------|
+| showDots               | boolean                   |
+| index                  | number                    |
+| length                 | number                    |
+| activeIndicatorConfig  | DotConfig                 |
+| inactiveIndicatorConfig | DotConfig                |
+| decreasingDots         | DecreasingDot[]           |
+| containerStyle         | DotConfig[]               |
+| dotColor               | StyleProp<ViewStyle>      |
+| dotStyle               | StyleProp<ViewStyle>      |
+| maxIndicators          | number                    |
+
+### DecreasingDot (from react-native-animated-dots-carousel)
+
+| Property   | Type    |
+|------------|---------|
+| quantity   | number  |
+| config     | DotConfig|
+
+### DotConfig (from react-native-animated-dots-carousel)
+
+| Property      | Type    |
+|---------------|---------|
+| size          | number  |
+| opacity       | number  |
+| color         | string  |
+| margin        | number  |
+| borderWidth?  | number  |
+| borderColor?  | string  |
+
+
+
+
 ## Contributing
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 ## License

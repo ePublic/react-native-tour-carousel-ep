@@ -48,7 +48,7 @@ const TourCarousel = ({
     activeIndicatorConfig,
     inactiveIndicatorConfig,
     decreasingDots,
-    containerStyle,
+    paginationContainerStyle,
     maxIndicators,
   } = PaginationConfig || {};
 
@@ -128,7 +128,7 @@ const TourCarousel = ({
             activeIndicatorConfig={activeIndicatorConfig}
             inactiveIndicatorConfig={inactiveIndicatorConfig}
             decreasingDots={decreasingDots}
-            containerStyle={containerStyle}
+            paginationContainerStyle={paginationContainerStyle}
             maxIndicators={maxIndicators || length}
           />
         )}
@@ -179,13 +179,6 @@ export const styles = StyleSheet.create({
   },
   sliderContentContainer: {
     paddingBottom: 10,
-  },
-  paginationContainer: {
-    paddingVertical: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginVertical: 20,
-    height: 'auto',
   },
   bottomButtonContainer: {
     borderWidth: 2,

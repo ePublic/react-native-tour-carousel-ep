@@ -1,4 +1,4 @@
-import type { StyleProp, ViewStyle } from 'react-native';
+import type { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import {
   type CarouselDotsProps,
   type DecreasingDot,
@@ -29,7 +29,7 @@ export type TourCarouselProps = {
     /**
      * Style properties for the skip button
      */
-    skipButtonStyle?: StyleProp<ViewStyle>;
+    skipButtonStyle?: StyleProp<TextStyle>;
     skipButtonContainer?: StyleProp<ViewStyle>;
     /**
      * Title text style
@@ -119,35 +119,35 @@ export type TourCarouselProps = {
      *
      * Default: `true`
      */
-    showDots: boolean;
+    showDots?: boolean;
     /**
      * Index of the current slide
      */
-    index: number;
+    index?: number;
     /**
      * Total number of slides
      *
      * Default: `0`
      */
-    length: number;
+    length?: number;
     /**
      * Configuration for active dot indicator
      *
      * Default: `0`
      */
-    activeIndicatorConfig: DotConfig;
+    activeIndicatorConfig?: DotConfig;
     /**
      * Configuration for inactive dot indicator
      */
-    inactiveIndicatorConfig: DotConfig;
+    inactiveIndicatorConfig?: DotConfig;
     /**
      * Array of decreasing dots
      */
-    decreasingDots: DecreasingDot[];
+    decreasingDots?: DecreasingDot[];
     /**
      * Style properties for the container of dots
      */
-    containerStyle: DotConfig[];
+    paginationContainerStyle?: DotConfig[];
     /**
      * Style property for dot color
      */
@@ -158,8 +158,10 @@ export type TourCarouselProps = {
     dotStyle?: StyleProp<ViewStyle>;
     /**
      * Maximum number of indicators
+     *
+     * Default: `10`
      */
-    maxIndicators: number;
+    maxIndicators?: number;
   };
   /**
    * Configuration for bottom buttons (next/finish)
@@ -184,7 +186,7 @@ export type TourCarouselProps = {
     /**
      * Style properties for bottom button text
      */
-    bottomButtonTextStyle?: StyleProp<ViewStyle>;
+    bottomButtonTextStyle?: StyleProp<TextStyle>;
   };
 };
 
@@ -219,7 +221,7 @@ type SlideConfig = {
   /**
    * Style properties for the title of the slide
    */
-  slideTitleStyle?: StyleProp<ViewStyle>;
+  slideTitleStyle?: StyleProp<TextStyle>;
   /**
    * Style properties for the subtitle of the slide
    */
@@ -257,6 +259,6 @@ export type PaginationType = Partial<
     /**
      * Style properties for the container of pagination.
      */
-    containerStyle?: StyleProp<ViewStyle>;
+    paginationContainerStyle?: StyleProp<ViewStyle>;
   }
 >;

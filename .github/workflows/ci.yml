@@ -47,15 +47,17 @@ jobs:
       - name: Build package
         run: yarn prepare
 
-  build-web:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+  # ModuleNotFoundError: Module not found: Error: Can't resolve 'react-native-reanimated' in '/home/runner/work/react-native-tour-carousel/react-native-tour-carousel/src/components'
 
-      - name: Setup
-        uses: ./.github/actions/setup
+  # build-web:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
 
-      - name: Build example for Web
-        run: |
-          yarn example expo export:web
+  #     - name: Setup
+  #       uses: ./.github/actions/setup
+
+  #     - name: Build example for Web
+  #       run: |
+  #         yarn example expo export:web

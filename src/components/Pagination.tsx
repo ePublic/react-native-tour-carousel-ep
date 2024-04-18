@@ -8,16 +8,16 @@ const Pagination = ({
   length,
   activeIndicatorConfig,
   inactiveIndicatorConfig,
-  containerStyle,
+  paginationContainerStyle,
   decreasingDots,
   maxIndicators,
 }: PaginationType): JSX.Element => {
   return (
-    <View style={containerStyle || styles.containerStyle}>
+    <View style={paginationContainerStyle || styles.paginationContainerStyle}>
       <AnimatedDotsCarousel
         length={length || 0}
         currentIndex={currentIndex || 0}
-        maxIndicators={maxIndicators || 0}
+        maxIndicators={maxIndicators || 10}
         interpolateOpacityAndColor={true}
         activeIndicatorConfig={
           activeIndicatorConfig || {
@@ -52,7 +52,7 @@ const Pagination = ({
   );
 };
 export const styles = StyleSheet.create({
-  containerStyle: {
+  paginationContainerStyle: {
     paddingVertical: 8,
     alignItems: 'center',
     justifyContent: 'center',

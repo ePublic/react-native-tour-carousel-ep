@@ -147,7 +147,7 @@ export type TourCarouselProps = {
     /**
      * Style properties for the container of dots
      */
-    paginationContainerStyle?: DotConfig[];
+    paginationContainerStyle?: StyleProp<ViewStyle>;
     /**
      * Style property for dot color
      */

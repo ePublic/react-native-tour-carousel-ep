@@ -2,15 +2,17 @@
 
 > Tour Carousel for use in react native app tours
 
-## Why
-
+## What
 The Tour Carousel Component is a versatile component layer that combines the functionality of two popular React Native carousel libraries, react-native-reanimated-carousel and react-native-animated-dots-carousel. This component provides a cohesive and customizable way for users to navigate through a series of screens or slides.
-Features
 
+#### Features
 - Smooth Animation: Utilizes the power of react-native-reanimated for smooth and performant animations.
 - Animated Dots Indicator: Includes a built-in dots indicator powered by react-native-animated-dots-carousel for easy navigation feedback.
 - Customizable: Easily customize the carousel behavior, animation settings, and dot styles to match your app's design.
-- Callback Functions: Supports callback functions for handling actions when the user completes or skips the carousel.
+- Callback Functions: Supports callback functions for handling actions when the user `completes` or `skips` the carousel.
+
+## Why
+This package aims to enhance user experience through intuitive app tours, effectively showcasing key features, reducing learning curves, and boosting engagement. Its user-friendly design ensures easy integration, offering developers a hassle-free solution for creating immersive onboarding experiences for free.
 
 ## Preview
 

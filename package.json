@@ -37,7 +37,13 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "tour carousel",
+    "onboarding",
+    "walkthrough",
+    "tour",
+    "carousel",
+    "react-native-tour-carousel"
   ],
   "repository": {
     "type": "git",

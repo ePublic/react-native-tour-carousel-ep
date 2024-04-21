@@ -69,8 +69,8 @@ const TourCarousel = ({
     setCurrentSlideNumber(activeSlideIndex + 1);
   }
 
-  const slideWidth = widthPercentage(86);
-  const itemHorizontalMargin = widthPercentage(10);
+  const slideWidth = widthPercentage(84);
+  const itemHorizontalMargin = widthPercentage(8);
 
   const itemWidth = slideWidth + itemHorizontalMargin * 2;
 
@@ -106,6 +106,11 @@ const TourCarousel = ({
             (progressValue.value = absoluteProgress)
           }
           mode={'parallax'}
+          modeConfig={{
+            parallaxScrollingOffset: 100,
+            parallaxScrollingScale: 0.8,
+            parallaxAdjacentItemScale: 0.55,
+          }}
           data={data}
           renderItem={({ item }): JSX.Element => (
             <Slides

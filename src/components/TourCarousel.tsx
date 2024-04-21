@@ -69,7 +69,7 @@ const TourCarousel = ({
     setCurrentSlideNumber(activeSlideIndex + 1);
   }
 
-  const slideWidth = widthPercentage(84);
+  const slideWidth = widthPercentage(86);
   const itemHorizontalMargin = widthPercentage(8);
 
   const itemWidth = slideWidth + itemHorizontalMargin * 2;

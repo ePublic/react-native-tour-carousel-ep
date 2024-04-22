@@ -56,7 +56,7 @@
   },
   "homepage": "https://github.com/CPKVG/react-native-tour-carousel#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "@CPKVG:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",

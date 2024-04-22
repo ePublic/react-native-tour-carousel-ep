@@ -17,7 +17,7 @@ The Tour Carousel Component is a versatile component layer that combines the fun
 ## Preview
 
 <p align="left">
-  <img src="https://github.com/CPKVG/react-native-tour-carousel/assets/51846930/641458d8-77f6-4bdb-a24b-3ba52f2c0cba" width="360">
+  <img src="https://github.com/CPKVG/react-native-tour-carousel/assets/51846930/1485760d-eb48-4343-8ac3-6fdd9517ef97" width="360">
 </p>
 
 ## Installation

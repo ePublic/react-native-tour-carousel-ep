@@ -106,6 +106,11 @@ const TourCarousel = ({
             (progressValue.value = absoluteProgress)
           }
           mode={'parallax'}
+          modeConfig={{
+            parallaxScrollingOffset: 100,
+            parallaxScrollingScale: 0.8,
+            parallaxAdjacentItemScale: 0.55,
+          }}
           data={data}
           renderItem={({ item }): JSX.Element => (
             <Slides

@@ -34,7 +34,7 @@ yarn add react-native-reanimated react-native-gesture-handler react-native-reani
 
 #### Npm links
 
-- [react-native-reanimated-carousel](https://www.npmjs.com/package/react-native-reanimated-carousel)
+- [react-native-reanimated](https://www.npmjs.com/package/react-native-reanimated)
 - [react-native-gesture-handler](https://www.npmjs.com/package/react-native-gesture-handler)
 - [react-native-reanimated-carousel](https://www.npmjs.com/package/react-native-reanimated-carousel)
 - [react-native-animated-dots-carousel](https://www.npmjs.com/package/react-native-animated-dots-carousel)

@@ -13,7 +13,10 @@ const Pagination = ({
   maxIndicators,
 }: PaginationType): JSX.Element => {
   return (
-    <View style={paginationContainerStyle || styles.paginationContainerStyle}>
+    <View
+      style={paginationContainerStyle || styles.paginationContainerStyle}
+      testID="pagination-container"
+    >
       <AnimatedDotsCarousel
         length={length || 0}
         currentIndex={currentIndex || 0}

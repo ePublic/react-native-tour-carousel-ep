@@ -3,12 +3,15 @@
 > Tour Carousel for use in react native app tours
 
 ## Why
+
 This package aims to enhance user experience through intuitive app tours, effectively showcasing key features, reducing learning curves, and boosting engagement. Its user-friendly design ensures easy integration, offering developers a hassle-free solution for creating immersive onboarding experience for free.
 
 ## What
+
 The Tour Carousel Component is a versatile component layer that combines the functionality of two popular React Native carousel libraries, react-native-reanimated-carousel and react-native-animated-dots-carousel. This component provides a cohesive and customizable way for users to navigate through a series of screens or slides.
 
 #### Features
+
 - Smooth Animation: Utilizes the power of react-native-reanimated for smooth and performant animations.
 - Animated Dots Indicator: Includes a built-in dots indicator powered by react-native-animated-dots-carousel for easy navigation feedback.
 - Customizable: Easily customize the carousel behavior, animation settings, and dot styles to match your app's design.
@@ -29,15 +32,13 @@ yarn add react-native-tour-carousel
 package dependancies
 
 ```sh
-yarn add react-native-reanimated react-native-gesture-handler react-native-reanimated-carousel react-native-animated-dots-carousel
+yarn add react-native-reanimated react-native-gesture-handler
 ```
 
 #### Npm links
 
 - [react-native-reanimated](https://www.npmjs.com/package/react-native-reanimated)
 - [react-native-gesture-handler](https://www.npmjs.com/package/react-native-gesture-handler)
-- [react-native-reanimated-carousel](https://www.npmjs.com/package/react-native-reanimated-carousel)
-- [react-native-animated-dots-carousel](https://www.npmjs.com/package/react-native-animated-dots-carousel)
 
 ## Quick usage guide
 

@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> renders for a Pagination correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "height": "auto",
+      "justifyContent": "center",
+      "marginVertical": 20,
+      "paddingVertical": 8,
+    }
+  }
+  testID="pagination-container"
+>
+  <View
+    style={
+      {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "rgba(128, 128, 128, 1)",
+          "borderColor": undefined,
+          "borderRadius": 12,
+          "borderWidth": undefined,
+          "height": 12,
+          "marginHorizontal": 6,
+          "marginVertical": 0,
+          "opacity": 0.4,
+          "width": 12,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "rgba(128, 128, 128, 1)",
+          "borderColor": undefined,
+          "borderRadius": 12,
+          "borderWidth": undefined,
+          "height": 12,
+          "marginHorizontal": 6,
+          "marginVertical": 0,
+          "opacity": 0.4,
+          "width": 12,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "rgba(128, 128, 128, 1)",
+          "borderColor": undefined,
+          "borderRadius": 12,
+          "borderWidth": undefined,
+          "height": 12,
+          "marginHorizontal": 6,
+          "marginVertical": 0,
+          "opacity": 0.4,
+          "width": 12,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "rgba(128, 128, 128, 1)",
+          "borderColor": undefined,
+          "borderRadius": 12,
+          "borderWidth": undefined,
+          "height": 12,
+          "marginHorizontal": 6,
+          "marginVertical": 0,
+          "opacity": 0.4,
+          "width": 12,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "rgba(128, 128, 128, 1)",
+          "borderColor": undefined,
+          "borderRadius": 12,
+          "borderWidth": undefined,
+          "height": 12,
+          "marginHorizontal": 6,
+          "marginVertical": 0,
+          "opacity": 0.4,
+          "width": 12,
+        }
+      }
+    />
+  </View>
+</View>
+`;

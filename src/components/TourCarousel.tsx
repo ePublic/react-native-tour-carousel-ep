@@ -53,7 +53,7 @@ const TourCarousel = ({
   } = PaginationConfig || {};
 
   const {
-    buttonTestID,
+    buttonTestID = 'skip-button',
     nextButtonText = 'Next',
     finishButtonText = 'Finish',
     bottomButtonContainer,

@@ -16,6 +16,7 @@ const TourCarousel = ({
   carouselConfig,
   PaginationConfig,
   buttonConfig,
+  parallaxConfig,
 }: TourCarouselProps): JSX.Element => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [currentSlideNumber, setCurrentSlideNumber] = useState(1);
@@ -60,6 +61,14 @@ const TourCarousel = ({
     bottomButtonTextStyle,
   } = buttonConfig || {};
 
+  const {
+    pScrollingOffset = 100,
+    pScrollingScale = 0.8,
+    pAdjacentItemScale = 0.55,
+  } = parallaxConfig || {};
+
+
+
   const lastSlide = activeSlideIndex === data.length - 1;
 
   const carouselRef = useRef<any>();
@@ -95,7 +104,7 @@ const TourCarousel = ({
           width={itemWidth}
           height={height || itemWidth * 1.5}
           ref={carouselRef}
-          style={style}
+          style={[style]}
           loop={loop}
           pagingEnabled={pagingEnabled}
           snapEnabled={snapEnabled}
@@ -107,9 +116,9 @@ const TourCarousel = ({
           }
           mode={'parallax'}
           modeConfig={{
-            parallaxScrollingOffset: 100,
-            parallaxScrollingScale: 0.8,
-            parallaxAdjacentItemScale: 0.55,
+            parallaxScrollingOffset: pScrollingOffset,
+            parallaxScrollingScale: pScrollingScale,
+            parallaxAdjacentItemScale: pAdjacentItemScale,
           }}
           data={data}
           renderItem={({ item }): JSX.Element => (
@@ -168,16 +177,16 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   skipButtonStyle: {
-    color: 'black',
+    color: '#ffffff',
     fontSize: 16,
   },
   skipButtonContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    paddingRight: 8,
-    paddingVertical: 5,
-    marginRight: 10,
+    paddingRight: 20,
+    paddingVertical: 10,
+    marginRight: 0,
   },
   slider: {
     overflow: 'visible',

@@ -36,12 +36,19 @@ const Slides = ({
       activeOpacity={1}
       style={[
         slideInnerContainer || styles.slideInnerContainer,
-        { paddingHorizontal: itemHorizontalMargin },
+        { paddingHorizontal: itemHorizontalMargin},
       ]}
     >
       {/* Image */}
       <View style={slideImageContainer || styles.imageContainer}>
-        <Image source={{ uri: illustration }} style={styles.image} />
+        <Image
+          source={
+            typeof illustration === 'string'
+              ? { uri: illustration }
+              : illustration
+          }
+          style={styles.image}
+        />
       </View>
 
       {/* Title */}
@@ -78,7 +85,10 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 5,
   },
   image: {
-    ...StyleSheet.absoluteFillObject,
+    //...StyleSheet.absoluteFillObject, //<-- questo forza l'immagine ad occupare tutto lo spazio disponibile nel contenitore, senza rispettarne le dimensioni o padding
+    //ho aggiunto width e height per evitare che l'immagine venga distorta
+    width: '100%',
+    height: '100%',
     resizeMode: 'contain',
   },
   textContainer: {

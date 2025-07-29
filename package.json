@@ -1,6 +1,6 @@
 {
   "name": "react-native-tour-carousel",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Tour Carousel for use in react native app tours",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -47,16 +47,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CPKVG/react-native-tour-carousel.git"
+    "url": "git+https://github.com/ePublic/react-native-tour-carousel.git"
   },
-  "author": "chris van gennip <cpkvgennip@gmail.com> (https://github.com/CPKVG)",
+  "author": "chris van gennip <info@epublic.it> (https://github.com/ePublic)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CPKVG/react-native-tour-carousel/issues"
+    "url": "https://github.com/ePublic/react-native-tour-carousel/issues"
   },
-  "homepage": "https://github.com/CPKVG/react-native-tour-carousel#readme",
+  "homepage": "https://github.com/ePublic/react-native-tour-carousel#readme",
   "publishConfig": {
-    "@CPKVG:registry": "https://npm.pkg.github.com"
+    "@ePublic:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",

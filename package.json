@@ -1,5 +1,5 @@
 {
-  "name": "react-native-tour-carousel-ep",
+  "name": "react-native-tour-carousel",
   "version": "1.0.0",
   "description": "Tour Carousel for use in react native app tours",
   "main": "lib/commonjs/index",
@@ -43,19 +43,18 @@
     "walkthrough",
     "tour",
     "carousel",
-    "react-native-tour-carousel",
-    "react-native-tour-carousel-ep"
+    "react-native-tour-carousel"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ePublic/react-native-tour-carousel-ep.git"
+    "url": "git+https://github.com/ePublic/react-native-tour-carousel.git"
   },
   "author": "chris van gennip mod by epublic <info@epublic.it> (https://github.com/ePublic)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ePublic/react-native-tour-carousel-ep/issues"
+    "url": "https://github.com/ePublic/react-native-tour-carousel/issues"
   },
-  "homepage": "https://github.com/ePublic/react-native-tour-carousel-ep#readme",
+  "homepage": "https://github.com/ePublic/react-native-tour-carousel#readme",
   "publishConfig": {
     "@ePublic:registry": "https://npm.pkg.github.com"
   },

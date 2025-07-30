@@ -188,6 +188,29 @@ export type TourCarouselProps = {
      */
     bottomButtonTextStyle?: StyleProp<TextStyle>;
   };
+    /**
+   * Configuration for parallax animation of carousel
+   */
+  parallaxConfig?: {
+    /**
+     * Offset for parallax scrolling
+     *
+     * Default: 100
+     */
+    pScrollingOffset?: number;
+    /**
+     * Scale applied to scrolling items
+     *
+     * Default: 0.8
+     */
+    pScrollingScale?: number;
+    /**
+     * Scale of adjacent items in parallax mode
+     *
+     * Default: 0.55
+     */
+    pAdjacentItemScale?: number;
+  };
 };
 
 type Slide = {

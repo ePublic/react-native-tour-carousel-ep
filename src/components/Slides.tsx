@@ -35,8 +35,8 @@ const Slides = ({
     <TouchableOpacity
       activeOpacity={1}
       style={[
-        slideInnerContainer || styles.slideInnerContainer,
         { paddingHorizontal: itemHorizontalMargin},
+        slideInnerContainer || styles.slideInnerContainer        
       ]}
     >
       {/* Image */}

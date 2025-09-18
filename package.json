@@ -1,6 +1,6 @@
 {
   "name": "react-native-tour-carousel-ep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tour Carousel for use in react native app tours",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
